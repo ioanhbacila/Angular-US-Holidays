@@ -1,0 +1,4 @@
+<div *ngFor="let reason of reasons">
+  {{reason.name}}
+</div>
+<a [routerLink]="['/']" (click)="routeBack()">back</a>

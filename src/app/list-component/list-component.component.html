@@ -1,0 +1,5 @@
+<div *ngIf="det">
+<md-list *ngFor="let dates of Holidays;let i=index">
+  <md-list-item (click)="details(dates)"><a [routerLink]="['details']">{{dates[0].date}}</a></md-list-item>
+</md-list>
+</div>
