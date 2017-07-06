@@ -8,7 +8,7 @@ export class HolidayServiceService {
   private subject:Subject <any>=new Subject<any>();
   private event:Subject <any>=new Subject<any>();
   constructor() { }
-getDetails(msg:any){   
+  getDetails(msg:any){   
     this.subject.next(msg); 
   }
   getEvent(){
